@@ -34,3 +34,10 @@ node_modules
 .node_repl_history
 
 iisnode
+
+# Ghost DB file
+*.db
+*.db-journal
+
+# Ghost content database
+content/data/ghost.db
