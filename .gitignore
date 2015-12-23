@@ -39,5 +39,3 @@ iisnode
 *.db
 *.db-journal
 
-# Ghost content database
-content/data/ghost.db
