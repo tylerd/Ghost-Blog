@@ -1,0 +1,10 @@
+{
+	"version": "0.1.0",
+	"name": "TylersGhostBlog",
+	"engines": {
+    	"node": "0.10.32"
+  	},
+	"dependencies": {
+		"ghost": "0.5.2"
+	}
+}
