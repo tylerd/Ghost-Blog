@@ -820,13 +820,13 @@ body.nav-opened .nav {
     border-color: rgba(255, 255, 255, 0.6);
 }
 .nav-closed .menu-button:hover {
-    color: #222;
+    color: #fff;
 }
 
 /* When the navigation is closed and there is no cover image */
 .nav-closed .no-cover .menu-button {
-    border-color: #BFC8CD;
-    color: #9EABB3;
+    border-color: #fff;
+    color: #fff;
 }
 .nav-closed .no-cover .menu-button:hover {
     border-color: #555;
@@ -887,15 +887,15 @@ body.nav-opened .nav {
 .no-cover.main-header {
     min-height: 160px;
     max-height: 40vh;
-    background: #f5f8fa;
+    background: #00ABEC;
 }
 
 .no-cover .page-title {
-    color: rgba(0,0,0,0.8);
+    color: white;
 }
 
 .no-cover .page-description {
-    color: rgba(0,0,0,0.5);
+    color: white;
 }
 
 /* Add subtle load-in animation for content on the home page */
@@ -1777,11 +1777,11 @@ body:not(.post-template) .post-title {
         padding: 0 5px;
         border-radius: 0;
         border-width: 0;
-        color: #2e2e2e;
+        color: #fff;
         background: transparent;
     }
     .menu-button:hover {
-        color: #2e2e2e;
+        color: #fff;
         border-color: transparent;
         background: none;
     }
