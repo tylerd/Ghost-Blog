@@ -13,13 +13,14 @@ config = {
         url: 'http://' + process.env.WEBSITE_HOSTNAME,
         mail: {
             transport: 'SMTP',
-                options: {
-                    service: 'Mailgun',
-                    auth: {
-                        user: process.env.MAILGUN_USER,
-                        pass: process.env.MAILGUN_PASSWORD
-                    }
+            options: {
+                service: 'Mailgun',
+                auth: {
+                    user: process.env.MAILGUN_USER,
+                    pass: process.env.MAILGUN_PASSWORD
                 }
+            },
+            from: "tyler@tylerdoerksen.ca"
             },
         database: {
             client: 'sqlite3',
