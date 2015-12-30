@@ -10,7 +10,7 @@ config = {
     // When running Ghost in the wild, use the production environment
     // Configure your URL and mail settings here
     production: {
-        url: 'http://' + process.env.WEBSITE_HOSTNAME,
+        url: process.env.URL_OVERRIDE || ('http://' + process.env.WEBSITE_HOSTNAME),
         mail: {
             transport: 'SMTP',
             options: {
