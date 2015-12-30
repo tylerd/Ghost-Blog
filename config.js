@@ -11,7 +11,16 @@ config = {
     // Configure your URL and mail settings here
     production: {
         url: 'http://' + process.env.WEBSITE_HOSTNAME,
-        mail: {},
+        mail: {
+            transport: 'SMTP',
+                options: {
+                    service: 'Mailgun',
+                    auth: {
+                        user: process.env.MAILGUN_USER,
+                        pass: process.env.MAILGUN_PASSWORD
+                    }
+                }
+            },
         database: {
             client: 'sqlite3',
             connection: {
