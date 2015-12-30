@@ -19,6 +19,14 @@
             e.preventDefault();
             $("body").toggleClass("nav-opened nav-closed");
         });
+        
+        // Set all external links to open in a new window
+        $('a').not('[href*="mailto:"]').each(function () {
+            var isInternalLink = new RegExp('/' + window.location.host + '/');
+		    if ( ! isInternalLink.test(this.href) ) {
+			    $(this).attr('target', '_blank');
+		    }
+	    });
 
     });
 
