@@ -21,7 +21,7 @@ config = {
                 }
             },
             from: "tyler@tylerdoerksen.ca"
-            },
+        },
         database: {
             client: 'sqlite3',
             connection: {
