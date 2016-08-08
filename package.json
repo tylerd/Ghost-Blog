@@ -6,6 +6,6 @@
   },
   "dependencies": {
     "applicationinsights": "^0.15.17",
-    "ghost": "0.8.0"
+    "ghost": "0.9.0"
   }
 }
