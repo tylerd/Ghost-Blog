@@ -2,7 +2,7 @@
   "version": "0.1.0",
   "name": "TylersGhostBlog",
   "engines": {
-    "node": "0.10.40"
+    "node": ">=4.2 <5.*"
   },
   "dependencies": {
     "applicationinsights": "^0.15.17",
