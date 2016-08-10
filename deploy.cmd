@@ -92,6 +92,7 @@ echo Handling node.js deployment.
 echo Ouput git commit short hash to version.txt
 pushd "%DEPLOYMENT_SOURCE%"
 git rev-parse --short HEAD > version.txt
+popd
 
 :: 1. KuduSync
 IF /I "%IN_PLACE_DEPLOYMENT%" NEQ "1" (
