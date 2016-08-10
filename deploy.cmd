@@ -97,6 +97,14 @@ IF /I "%IN_PLACE_DEPLOYMENT%" NEQ "1" (
 :: 2. Select node version
 call :SelectNodeVersion
 
+:: TYLER: Killing Node Process before Upgrade
+echo Attempting to kill node process
+taskkill /im node.exe >nul 2>nul && (
+  echo node.exe was killed
+) || (
+  echo no node process was killed
+)
+
 :: 3. Install npm packages
 IF EXIST "%DEPLOYMENT_TARGET%\package.json" (
   pushd "%DEPLOYMENT_TARGET%"
